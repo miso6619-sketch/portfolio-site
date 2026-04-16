@@ -1,0 +1,88 @@
+@import "pretendard/dist/web/static/pretendard.css";
+
+:root {
+  --bg: #AAB7C3;
+  --bg-sub: #D3DAE0;
+  --card: #F7F3EB;
+
+  --text-main: #1F252B;
+  --text-body: #4B5661;
+  --text-sub: #7C8792;
+
+  --point: #D07A63;
+  --point-soft: #E7C86E;
+  --point-accent: #7B6CE6;
+
+  --border: rgba(31, 37, 43, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Pretendard", sans-serif;
+  background: var(--bg);
+  color: var(--text-main);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.page-wrap {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.page-frame {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 24px;
+  position: relative;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1440px;
+  min-height: calc(100vh - 48px);
+  margin: 0 auto;
+  position: relative;
+}
+
+.sub-inner {
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px 48px 60px;
+  box-shadow: 0 10px 30px rgba(31, 37, 43, 0.04);
+}

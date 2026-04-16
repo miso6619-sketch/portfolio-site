@@ -1,0 +1,258 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.home-inner {
+  min-height: 100vh;
+}
+
+/* 얼굴 */
+.home-head {
+  position: absolute;
+  top: -56px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.home-head-img {
+  display: block;
+  width: 450px;
+  height: auto;
+  object-fit: contain;
+  transform-origin: center top;
+  transition: transform 0.35s ease, filter 0.35s ease;
+  will-change: transform;
+}
+
+.home-head:hover .home-head-img {
+  transform: translateY(12px) scale(1.04);
+  filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.12));
+}
+
+/* 머리 말풍선 */
+.home-head-bubble {
+  position: absolute;
+  left: 10%;
+  bottom: 120px;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.home-head-bubble-img {
+  display: block;
+  width: 180px;
+  height: auto;
+}
+
+.home-head:hover .home-head-bubble {
+  opacity: 1;
+}
+
+/* 안내 문구 */
+.home-guide-text {
+  position: absolute;
+  top: 530px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--card);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: guideBlink 1.8s ease-in-out infinite;
+  z-index: 12;
+}
+
+@keyframes guideBlink {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+/* 하단 아이콘 영역 */
+.home-icon-list {
+  position: absolute;
+  left: 50%;
+  bottom: 42px;
+  transform: translateX(-50%);
+  width: 980px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.home-icon-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  transition: transform 0.25s ease;
+}
+
+.home-icon-item:hover {
+  transform: translateY(-8px);
+}
+
+/* 말풍선 이미지 */
+.home-bubble {
+  position: absolute;
+  bottom: calc(70% + 12px);
+  left: 50%;
+  transform: translateX(-70%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: 30;
+  pointer-events: none;
+}
+
+.home-bubble-img {
+  display: block;
+  width: 170px;
+  height: auto;
+}
+
+.home-icon-item:hover .home-bubble {
+  opacity: 1;
+}
+
+.home-icon-visual {
+  width: 280px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-icon-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.08));
+}
+
+/* 아이콘별 위치 미세 조정 */
+.home-icon-item-1 {
+  transform: translateY(0);
+}
+
+.home-icon-item-2 {
+  transform: translateY(6px);
+}
+
+.home-icon-item-3 {
+  transform: translateY(2px);
+}
+
+.home-icon-item-1:hover {
+  transform: translateY(-8px) scale(1.04);
+}
+
+.home-icon-item-2:hover {
+  transform: translateY(-2px) scale(1.04);
+}
+
+.home-icon-item-3:hover {
+  transform: translateY(-6px) scale(1.04);
+}
+
+/* 반응형 */
+@media (max-width: 1440px) {
+  .home-head-img {
+    width: 470px;
+  }
+
+  .home-guide-text {
+    top: 375px;
+    font-size: 20px;
+  }
+
+  .home-icon-list {
+    width: 820px;
+    bottom: 36px;
+  }
+
+  .home-icon-visual {
+    width: 160px;
+    height: 140px;
+  }
+
+  .home-bubble-img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-head {
+    top: 80px;
+  }
+
+  .home-head-img {
+    width: 360px;
+  }
+
+  .home-guide-text {
+    top: 340px;
+    font-size: 18px;
+  }
+
+  .home-icon-list {
+    width: 100%;
+    max-width: 680px;
+    bottom: 28px;
+    padding: 0 20px;
+  }
+
+  .home-icon-visual {
+    width: 140px;
+    height: 120px;
+  }
+
+  .home-bubble-img {
+    width: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-head {
+    top: 92px;
+  }
+
+  .home-head-img {
+    width: 300px;
+  }
+
+  .home-guide-text {
+    top: 310px;
+    font-size: 16px;
+  }
+
+  .home-icon-list {
+    max-width: 100%;
+    gap: 8px;
+    bottom: 24px;
+  }
+
+  .home-icon-visual {
+    width: 110px;
+    height: 100px;
+  }
+
+  .home-bubble-img {
+    width: 110px;
+  }
+}

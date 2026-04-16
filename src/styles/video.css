@@ -1,0 +1,87 @@
+
+
+.vid-body {
+  min-height: 100vh;
+  max-width: 1080px;
+  padding: 120px 0 100px;
+}
+
+.vid-title {
+  margin-bottom: 40px;
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.vid-section {
+  padding: 56px 0;
+  border-top: 1px solid var(--border);
+  scroll-margin-top: 100px;
+}
+
+.vid-section h2 {
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.vid-section p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-body);
+}
+
+.vid-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 28px;
+}
+
+.vid-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vid-player {
+  width: 100%;
+  border-radius: 18px;
+  background: #000;
+  display: block;
+}
+
+.vid-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+.vid-card-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+@media (max-width: 1024px) {
+  .vid-body {
+    padding: 100px 0 80px;
+  }
+
+  .vid-title {
+    font-size: 42px;
+  }
+
+  .vid-list {
+    grid-template-columns: 1fr;
+  }
+
+  .vid-section h2 {
+    font-size: 28px;
+  }
+}
