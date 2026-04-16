@@ -6,7 +6,7 @@ import "./styles/common.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio-site">
       <App />
     </BrowserRouter>
   </React.StrictMode>
