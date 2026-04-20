@@ -26,9 +26,10 @@ function WebPage() {
     <main className="page-wrap">
       <section className="page-frame">
         <div className="inner">
-          <SideMenu />
-
-          <h1 className="web-title">웹페이지</h1>
+          <div className="web-header">
+            <h1 className="web-title">웹페이지</h1>
+            <SideMenu />
+          </div>
 
           <div className="sub-inner">
             <div className="web-body">

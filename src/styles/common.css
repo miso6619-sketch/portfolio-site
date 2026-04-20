@@ -68,7 +68,7 @@ ol {
   max-width: 1920px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 24px;
+  padding: 0 24px 36px;
   position: relative;
 }
 
@@ -82,7 +82,7 @@ ol {
 
 .sub-inner {
   background: #fff;
-  border-radius: 10px;
-  padding: 32px 48px 60px;
+  border-radius: 8px;
+  padding: 12px 62px 60px;
   box-shadow: 0 10px 30px rgba(31, 37, 43, 0.04);
 }

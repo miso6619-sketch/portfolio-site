@@ -3,8 +3,50 @@
   min-height: 100vh;
 }
 
-.home-inner {
+.home-frame {
+  position: relative;
   min-height: 100vh;
+  overflow: hidden;
+  background: #AAB7C3;
+}
+
+.home-inner {
+  position: relative;
+  min-height: 100vh;
+  z-index: 2;
+}
+
+.home-bg-video-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.home-bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(170, 183, 195, 0.42) 0%,
+      rgba(170, 183, 195, 0.28) 100%
+    ),
+    rgba(170, 183, 195, 0.18);
+  pointer-events: none;
+}
+
+.home-inner .menu-button-wrap {
+  position: absolute;
+  top: 28px;
+  right: 5px;
+  z-index: 30;
 }
 
 /* 얼굴 */
@@ -92,6 +134,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  z-index: 12;
 }
 
 .home-icon-item {

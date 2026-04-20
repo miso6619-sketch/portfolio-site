@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { HiBars3, HiXMark, HiChevronDown } from "react-icons/hi2";
+import { HiBars3, HiXMark, HiChevronDown, HiHome } from "react-icons/hi2";
 import { navItems } from "../js/menu";
 import "../styles/menu.css";
 
@@ -23,7 +23,6 @@ function SideMenu() {
   const moveToSection = (path, sectionId) => {
     closeMenu();
 
-    // 지금 있는 페이지와 이동할 페이지가 같으면 바로 스크롤
     if (location.pathname === path) {
       const target = document.getElementById(sectionId);
 
@@ -38,7 +37,6 @@ function SideMenu() {
       return;
     }
 
-    // 다른 페이지면 해시 붙여서 이동
     navigate(`${path}#${sectionId}`);
   };
 
@@ -54,16 +52,32 @@ function SideMenu() {
     toggleMenu(item.title);
   };
 
+  const goHome = () => {
+    closeMenu();
+    window.location.href = import.meta.env.BASE_URL;
+  };
+
   return (
     <>
-      <button
-        type="button"
-        className="menu-trigger"
-        onClick={() => setMenuOpen(true)}
-        aria-label="메뉴 열기"
-      >
-        <HiBars3 />
-      </button>
+      <div className="menu-button-wrap">
+        <button
+          type="button"
+          className="home-trigger"
+          onClick={goHome}
+          aria-label="홈으로 이동"
+        >
+          <HiHome />
+        </button>
+
+        <button
+          type="button"
+          className="menu-trigger"
+          onClick={() => setMenuOpen(true)}
+          aria-label="메뉴 열기"
+        >
+          <HiBars3 />
+        </button>
+      </div>
 
       <div
         className={`menu-overlay ${menuOpen ? "is-open" : ""}`}

@@ -1,7 +1,7 @@
 export const navItems = [
   {
-    title: "홈",
-    path: "/",
+    title: "프로필",
+    path: "/about",
     children: [],
   },
   {

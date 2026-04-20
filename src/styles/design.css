@@ -1,11 +1,31 @@
+.dsn-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px 0;
+  background: var(--bg);
+}
+
+.dsn-header .menu-button-wrap {
+  position: static;
+  top: auto;
+  right: auto;
+  z-index: auto;
+  flex-shrink: 0;
+}
+
 .dsn-body {
   min-height: 100vh;
   max-width: 1080px;
-  padding: 120px 0 100px;
+  padding: 0 0 10px;
 }
 
 .dsn-title {
-  margin-bottom: 40px;
+  margin: 0;
   font-size: 56px;
   font-weight: 700;
   color: var(--text-main);
@@ -15,7 +35,7 @@
 
 .dsn-section {
   padding: 56px 0;
-  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
   scroll-margin-top: 100px;
 }
 

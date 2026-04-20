@@ -6,9 +6,10 @@ function AboutPage() {
     <main className="page-wrap">
       <section className="page-frame">
         <div className="inner">
-          <SideMenu />
-
-          <h1 className="abt-title">소개</h1>
+          <div className="abt-header">
+            <h1 className="abt-title">소개</h1>
+            <SideMenu />
+          </div>
 
           <div className="sub-inner">
             <div className="abt-body">

@@ -26,9 +26,10 @@ function DesignPage() {
     <main className="page-wrap">
       <section className="page-frame">
         <div className="inner">
-          <SideMenu />
-
-          <h1 className="dsn-title">디자인</h1>
+          <div className="dsn-header">
+            <h1 className="dsn-title">디자인</h1>
+            <SideMenu />
+          </div>
 
           <div className="sub-inner">
             <div className="dsn-body">
