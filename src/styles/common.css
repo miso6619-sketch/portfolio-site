@@ -14,6 +14,11 @@
   --point-accent: #7B6CE6;
 
   --border: rgba(31, 37, 43, 0.08);
+
+  --bg-about: #C2CAD6;
+  --bg-video: #9AAFC6;
+  --bg-web: #B8C4B6;
+  --bg-design: #CBC4CC;
 }
 
 * {
@@ -31,7 +36,6 @@ body,
 
 body {
   font-family: "Pretendard", sans-serif;
-  background: var(--bg);
   color: var(--text-main);
 }
 
@@ -60,7 +64,7 @@ ol {
 .page-wrap {
   width: 100%;
   min-height: 100vh;
-  background: var(--bg);
+  /* background: var(--bg); */
 }
 
 .page-frame {

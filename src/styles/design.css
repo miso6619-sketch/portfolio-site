@@ -1,3 +1,44 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg-design);
+}
+
+#root {
+  height: 100%;
+}
+
+.dsn-page-wrap {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg-design);
+}
+
+.dsn-page-frame {
+  width: 100%;
+  max-width: 1920px;
+  height: 100vh;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 24px 24px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dsn-page-inner.inner {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  min-height: auto;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 .dsn-header {
   position: sticky;
   top: 0;
@@ -6,8 +47,10 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 24px;
-  padding: 28px 0;
-  background: var(--bg);
+  padding: 24px 0 20px;
+  background: var(--bg-design);
+  flex-shrink: 0;
+  cursor: pointer;
 }
 
 .dsn-header .menu-button-wrap {
@@ -18,10 +61,8 @@
   flex-shrink: 0;
 }
 
-.dsn-body {
-  min-height: 100vh;
-  max-width: 1080px;
-  padding: 0 0 10px;
+.dsn-header-menu {
+  flex-shrink: 0;
 }
 
 .dsn-title {
@@ -31,16 +72,55 @@
   color: var(--text-main);
   line-height: 1.1;
   letter-spacing: -0.03em;
+  cursor: default;
+}
+
+.dsn-sub-inner.sub-inner {
+  flex: 1;
+  min-height: 0;
+  height: auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 12px 0 0;
+  box-shadow: 0 10px 30px rgba(31, 37, 43, 0.04);
+  overflow: hidden;
+  cursor: default;
+}
+
+.dsn-scroll-area {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 62px 60px;
+  scrollbar-width: thin;
+}
+
+.dsn-body {
+  width: 100%;
+  max-width: 1080px;
+  height: auto;
+  min-height: auto;
+  padding: 0;
+  overflow: visible;
 }
 
 .dsn-section {
-  padding: 56px 0;
+  padding: 40px 0;
   border-bottom: 1px solid var(--border);
   scroll-margin-top: 100px;
 }
 
+.dsn-section:first-child {
+  padding-top: 32px;
+}
+
+.dsn-section:last-child {
+  border-bottom: 0;
+  padding-bottom: 20px;
+}
+
 .dsn-section h2 {
-  margin-bottom: 16px;
+  margin: 0 0 16px;
   font-size: 32px;
   font-weight: 700;
   color: var(--text-main);

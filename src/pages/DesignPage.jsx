@@ -1,10 +1,11 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import SideMenu from "../components/SideMenu";
 import "../styles/design.css";
 
 function DesignPage() {
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (!location.hash) return;
@@ -23,35 +24,49 @@ function DesignPage() {
   }, [location]);
 
   return (
-    <main className="page-wrap">
-      <section className="page-frame">
-        <div className="inner">
+    <main className="page-wrap dsn-page-wrap">
+      <section
+        className="page-frame dsn-page-frame"
+        onClick={() => navigate("/")}
+      >
+        <div className="inner dsn-page-inner">
           <div className="dsn-header">
             <h1 className="dsn-title">디자인</h1>
-            <SideMenu />
+
+            <div
+              className="dsn-header-menu"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <SideMenu />
+            </div>
           </div>
 
-          <div className="sub-inner">
-            <div className="dsn-body">
-              <section className="dsn-section" id="design-01">
-                <h2>작업 01</h2>
-                <p>여기에 첫 번째 디자인 작업 내용을 넣으면 돼.</p>
-              </section>
+          <div
+            className="sub-inner dsn-sub-inner"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="dsn-scroll-area">
+              <div className="dsn-body">
+                <section className="dsn-section" id="design-01">
+                  <h2>작업 01</h2>
+                  <p>여기에 첫 번째 디자인 작업 내용을 넣으면 돼.</p>
+                </section>
 
-              <section className="dsn-section" id="design-02">
-                <h2>작업 02</h2>
-                <p>여기에 두 번째 디자인 작업 내용을 넣으면 돼.</p>
-              </section>
+                <section className="dsn-section" id="design-02">
+                  <h2>작업 02</h2>
+                  <p>여기에 두 번째 디자인 작업 내용을 넣으면 돼.</p>
+                </section>
 
-              <section className="dsn-section" id="design-03">
-                <h2>작업 03</h2>
-                <p>여기에 세 번째 디자인 작업 내용을 넣으면 돼.</p>
-              </section>
+                <section className="dsn-section" id="design-03">
+                  <h2>작업 03</h2>
+                  <p>여기에 세 번째 디자인 작업 내용을 넣으면 돼.</p>
+                </section>
 
-              <section className="dsn-section" id="design-04">
-                <h2>작업 04</h2>
-                <p>여기에 네 번째 디자인 작업 내용을 넣으면 돼.</p>
-              </section>
+                <section className="dsn-section" id="design-04">
+                  <h2>작업 04</h2>
+                  <p>여기에 네 번째 디자인 작업 내용을 넣으면 돼.</p>
+                </section>
+              </div>
             </div>
           </div>
         </div>

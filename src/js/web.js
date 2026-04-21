@@ -1,0 +1,38 @@
+export const webProjects = [
+  {
+    id: "web-project-01",
+    title: "THE SOUND PROJECT",
+    desc: "HTML, CSS, JavaScript 기반으로 제작하고 jQuery와 Swiper를 활용해 인터랙션을 구현한 오디오 브랜드 콘셉트 웹사이트",
+    notionUrl: "#",
+    siteUrl: "https://miso6619-sketch.github.io/THE-SOUND-PROJECT/index.html",
+    image: "/img/web/web-project-01.jpg",
+    imageAlt: "프로젝트 01 대표 이미지",
+  },
+  {
+    id: "web-project-02",
+    title: "REAL OR FAKE",
+    desc: "여기에 두 번째 웹 프로젝트 내용을 넣으면 돼.",
+    notionUrl: "#",
+    siteUrl: "https://miso6619-sketch.github.io/privacy-campaign/",
+    image: "/img/web/web-project-02.jpg",
+    imageAlt: "프로젝트 02 대표 이미지",
+  },
+  {
+    id: "web-project-03",
+    title: "산타",
+    desc: "여기에 세 번째 웹 프로젝트 내용을 넣으면 돼.",
+    notionUrl: "#",
+    siteUrl: "https://santa-app-jw6k.vercel.app/",
+    image: "/img/web/web-project-03.jpg",
+    imageAlt: "프로젝트 03 대표 이미지",
+  },
+  {
+    id: "web-project-04",
+    title: "Nail Tip",
+    desc: "여기에 네 번째 웹 프로젝트 내용을 넣으면 돼.",
+    notionUrl: "#",
+    siteUrl: "https://miso6619-sketch.github.io/nail-archive/",
+    image: "/img/web/web-project-04.jpg",
+    imageAlt: "프로젝트 04 대표 이미지",
+  },
+];
