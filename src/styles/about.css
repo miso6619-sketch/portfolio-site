@@ -1,16 +1,107 @@
-.abt-body {
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg-about);
+}
+
+#root {
+  height: 100%;
+}
+
+.abt-page-wrap {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg-about);
+}
+
+.abt-page-frame {
+  width: 100%;
+  max-width: 1920px;
+  height: 100vh;
   min-height: 100vh;
-  max-width: 1080px;
-  padding: 120px 0 100px;
+  margin: 0 auto;
+  padding: 0 24px 24px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.abt-page-inner.inner {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  min-height: auto;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.abt-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 0 20px;
+  background: var(--bg-about);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.abt-header .menu-button-wrap {
+  position: static;
+  top: auto;
+  right: auto;
+  z-index: auto;
+  flex-shrink: 0;
+}
+
+.abt-header-menu {
+  flex-shrink: 0;
 }
 
 .abt-title {
-  margin-bottom: 28px;
+  margin: 0;
   font-size: 56px;
   font-weight: 700;
   color: var(--text-main);
   line-height: 1.1;
   letter-spacing: -0.03em;
+  cursor: default;
+}
+
+.abt-sub-inner.sub-inner {
+  flex: 1;
+  min-height: 0;
+  height: auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 12px 0 0;
+  box-shadow: 0 10px 30px rgba(31, 37, 43, 0.04);
+  overflow: hidden;
+  cursor: default;
+}
+
+.abt-scroll-area {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 62px 60px;
+  scrollbar-width: thin;
+}
+
+.abt-body {
+  width: 100%;
+  max-width: 1080px;
+  height: auto;
+  min-height: auto;
+  padding: 0;
+  overflow: visible;
 }
 
 .abt-text {

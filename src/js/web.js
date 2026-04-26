@@ -1,0 +1,38 @@
+export const webProjects = [
+  {
+    id: "web-project-01",
+    title: "THE SOUND PROJECT",
+    desc: "HTML, CSS, JavaScript 기반으로 제작하고 jQuery와 Swiper를 활용해 인터랙션을 구현한 오디오 브랜드 콘셉트 웹사이트",
+    notionUrl: "#",
+    siteUrl: "https://miso6619-sketch.github.io/THE-SOUND-PROJECT/index.html",
+    image: "/src/assets/images/web/web-project-01.png",
+    imageAlt: "THE SOUND PROJECT 풀 페이지 캡쳐 이미지",
+  },
+  {
+    id: "web-project-02",
+    title: "REAL OR FAKE",
+    desc: "개인정보 유출과 딥페이크 위험성을 주제로 제작한 개인정보보호 캠페인 웹사이트",
+    notionUrl: "#",
+    siteUrl: "https://miso6619-sketch.github.io/privacy-campaign/",
+    image: "/src/assets/images/web/web-project-02.png",
+    imageAlt: "REAL OR FAKE 풀 페이지 캡쳐 이미지",
+  },
+  {
+    id: "web-project-03",
+    title: "산타",
+    desc: "등산 정보를 동화적인 분위기로 풀어낸 산행 정보 및 커뮤니티 기반 React 웹사이트",
+    notionUrl: "#",
+    siteUrl: "https://santa-app-jw6k.vercel.app/",
+    image: "/src/assets/images/web/web-project-03.png",
+    imageAlt: "산타 풀 페이지 캡쳐 이미지",
+  },
+  {
+    id: "web-project-04",
+    title: "Nail Tip",
+    desc: "네일 팁 상품을 감성적인 무드로 보여주는 React 기반 네일 아카이브 웹사이트",
+    notionUrl: "#",
+    siteUrl: "https://miso6619-sketch.github.io/nail-archive/",
+    image: "/src/assets/images/web/web-project-04.png",
+    imageAlt: "Nail Tip 풀 페이지 캡쳐 이미지",
+  },
+];

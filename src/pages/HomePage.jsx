@@ -3,6 +3,7 @@ import SideMenu from "../components/SideMenu";
 import { homeItems } from "../js/home";
 import headImg from "../assets/images/home/head.png";
 import headBubbleImg from "../assets/images/home/meBubbleImg.png";
+import homeBgVideo from "../assets/video/mainbg.mp4";
 import "../styles/home.css";
 
 function HomePage() {
@@ -10,7 +11,20 @@ function HomePage() {
 
   return (
     <main className="page-wrap home">
-      <section className="page-frame">
+      <section className="page-frame home-frame">
+        <div className="home-bg-video-wrap">
+          <video
+            className="home-bg-video"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src={homeBgVideo} type="video/mp4" />
+          </video>
+          <div className="home-bg-overlay"></div>
+        </div>
+
         <div className="inner home-inner">
           <SideMenu />
 
