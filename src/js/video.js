@@ -22,7 +22,7 @@ export const videoSectionLinks = {
     notionUrl: "https://www.notion.so/Y2K-35051f8c41668040bd68d3fc76cfc76d?source=copy_link",
   },
   campaign: {
-    notionUrl: "https://www.notion.so/35051f8c416680febfa0f8611eab313b?source=copy_link",
+    notionUrl: "https://www.notion.so/REAL-or-FAKE-35051f8c4166809fabf2fc5d9f726efa?source=copy_link",
     siteUrl: "https://miso6619-sketch.github.io/privacy-campaign/",
   },
 };
