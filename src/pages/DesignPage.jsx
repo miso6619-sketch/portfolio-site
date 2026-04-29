@@ -61,77 +61,56 @@ function DesignPage() {
   };
 
   const renderCompareThumb = (project) => {
+    const openCompareGroupModal = (title, images) => {
+      setModalProject({
+        title: `${project.title} ${title}`,
+        images,
+      });
+    };
+
     return (
-      <button
-        type="button"
-        className="dsn-compare-thumb"
-        onClick={() => openModal(project)}
-      >
-        <div className="dsn-compare-side">
-          {project.compareImages.before.map((image, index) => (
-            <img
-              key={index}
-              src={image.src}
-              alt={image.alt}
-              className="dsn-compare-img"
-            />
-          ))}
-        </div>
+      <div className="dsn-compare-split">
+        <button
+          type="button"
+          className="dsn-compare-card"
+          onClick={() =>
+            openCompareGroupModal("리디자인 전", project.compareImages.before)
+          }
+        >
+          <img
+            src={project.compareImages.before[0].src}
+            alt={project.compareImages.before[0].alt}
+            className="dsn-compare-card-img"
+          />
 
-        <span className="dsn-compare-arrow">→</span>
+          <span className="dsn-compare-card-dim"></span>
 
-        <div className="dsn-compare-side">
-          {project.compareImages.after.slice(0, 2).map((image, index) => (
-            <img
-              key={index}
-              src={image.src}
-              alt={image.alt}
-              className="dsn-compare-img"
-            />
-          ))}
-        </div>
+          <span className="dsn-compare-card-text">
+            <strong>리디자인 전</strong>
+            <em>작업물 자세히 보기</em>
+          </span>
+        </button>
 
-        <span className="dsn-thumb-cover">
-          <span>작업물 자세히 보기</span>
-        </span>
-      </button>
-    );
-  };
+        <button
+          type="button"
+          className="dsn-compare-card"
+          onClick={() =>
+            openCompareGroupModal("리디자인 후", project.compareImages.after)
+          }
+        >
+          <img
+            src={project.compareImages.after[0].src}
+            alt={project.compareImages.after[0].alt}
+            className="dsn-compare-card-img"
+          />
 
-  const renderCompareModal = () => {
-    return (
-      <div className="dsn-modal-compare">
-        <div className="dsn-modal-compare-side">
-          <h3>원 사이트 디자인</h3>
+          <span className="dsn-compare-card-dim"></span>
 
-          <div className="dsn-modal-compare-img-list">
-            {modalProject.compareImages.before.map((image, index) => (
-              <img
-                key={index}
-                src={image.src}
-                alt={image.alt}
-                className="dsn-modal-img"
-              />
-            ))}
-          </div>
-        </div>
-
-        <span className="dsn-modal-arrow">→</span>
-
-        <div className="dsn-modal-compare-side">
-          <h3>리디자인 작업물</h3>
-
-          <div className="dsn-modal-compare-img-list">
-            {modalProject.compareImages.after.map((image, index) => (
-              <img
-                key={index}
-                src={image.src}
-                alt={image.alt}
-                className="dsn-modal-img"
-              />
-            ))}
-          </div>
-        </div>
+          <span className="dsn-compare-card-text">
+            <strong>리디자인 후</strong>
+            <em>작업물 자세히 보기</em>
+          </span>
+        </button>
       </div>
     );
   };
@@ -165,10 +144,6 @@ function DesignPage() {
   };
 
   const renderModalContent = () => {
-    if (modalProject.compareImages) {
-      return renderCompareModal();
-    }
-
     if (modalProject.images) {
       return renderMultiImageModal();
     }

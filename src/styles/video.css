@@ -277,3 +277,159 @@ body {
   line-height: 1.6;
   color: var(--text-body);
 }
+
+/* 반응형 */
+@media (max-width: 1024px) {
+  .video-page-frame {
+    padding: 0 18px 22px;
+  }
+
+  .vid-header {
+    padding: 22px 0 18px;
+  }
+
+  .vid-title {
+    font-size: 48px;
+  }
+
+  .video-scroll-area {
+    padding: 0 36px 50px;
+  }
+
+  .vid-section h2 {
+    font-size: 28px;
+  }
+
+  .vid-list {
+    gap: 22px;
+  }
+
+  .vid-card-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-page-frame {
+    padding: 0 14px 18px;
+  }
+
+  .vid-header {
+    padding: 18px 0 14px;
+  }
+
+  .vid-title {
+    font-size: 40px;
+  }
+
+  .video-sub-inner.sub-inner {
+    border-radius: 14px;
+  }
+
+  .video-scroll-area {
+    padding: 0 24px 42px;
+  }
+
+  .vid-section {
+    padding: 34px 0;
+  }
+
+  .vid-section:first-child {
+    padding-top: 28px;
+  }
+
+  .vid-section h2 {
+    font-size: 25px;
+  }
+
+  .vid-section p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .vid-section .vid-about-title {
+    font-size: 19px;
+  }
+
+  .vid-list {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    margin-top: 24px;
+  }
+
+  .vid-site01,
+  .vid-notion-top {
+    min-width: 132px;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 14px;
+  }
+
+  .vid-card-title {
+    font-size: 19px;
+  }
+
+  .vid-card-text {
+    font-size: 15px;
+  }
+
+  .vid-gif {
+    height: auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .video-page-frame {
+    padding: 0 12px 14px;
+  }
+
+  .vid-header {
+    padding: 16px 0 12px;
+  }
+
+  .vid-title {
+    font-size: 34px;
+  }
+
+  .video-scroll-area {
+    padding: 0 18px 36px;
+  }
+
+  .vid-section {
+    padding: 30px 0;
+  }
+
+  .vid-section h2 {
+    font-size: 22px;
+  }
+
+  .vid-section p {
+    font-size: 15px;
+  }
+
+  .vid-section-top {
+    gap: 12px;
+  }
+
+  .vid-top-links {
+    gap: 8px;
+  }
+
+  .vid-site01,
+  .vid-notion-top {
+    min-width: auto;
+    height: 38px;
+    padding: 0 14px;
+    font-size: 13px;
+  }
+
+  .vid-card-title {
+    font-size: 18px;
+  }
+
+  .vid-card-notion {
+    min-width: auto;
+    height: 36px;
+    padding: 0 14px;
+  }
+}

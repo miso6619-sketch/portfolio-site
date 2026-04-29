@@ -73,7 +73,7 @@ function VideoPage() {
                     </div>
                   </div>
 
-                  <p>등산 정보를 제공하는 '산타' 사이트 헤더 영상 작업</p>
+                  <p>산타 사이트의 동화적인 무드와 페이지별 콘셉트를 시각적으로 전달하기 위해 제작한 헤더 영상 작업입니다.</p>
 
                   <div className="vid-list">
                     {videoSections.web.map((item) => (
@@ -113,7 +113,7 @@ function VideoPage() {
                     </div>
                   </div>
 
-                  <p>Y2K 감성 기반의 게임형 영상 작업</p>
+                  <p>Premiere Pro와 Photoshop을 활용해 제작한 Y2K 드레스업 게임 콘셉트 영상으로, Object Selection Tool로 이미지 요소를 누끼 처리한 뒤 투명 배경 PNG로 제작해 폴더폰 UI, 레트로 게임 화면, 콜라주 이미지를 자연스럽게 구성했습니다.</p>
 
                   <div className="vid-list">
                     {videoSections.concept.map((item) => (
@@ -153,7 +153,7 @@ function VideoPage() {
                     </div>
                   </div>
 
-                  <p>개인정보보호, 딥페이크 관련 영상</p>
+                  <p>After Effects를 활용해 제작한 딥페이크 개인정보보호 캠페인 영상으로, 사이트의 어두운 블루 톤에 맞춰 딥페이크의 위험성을 먼저 보여준 뒤 예방법으로 이어지는 흐름으로 구성했습니다.</p>
 
                   <div className="vid-list">
                     {videoSections.campaign.map((item) => (

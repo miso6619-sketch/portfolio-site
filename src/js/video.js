@@ -19,10 +19,10 @@ export const videoSectionLinks = {
     notionUrl: "https://www.notion.so/34751f8c416680ba87c7c07b4a3eef47?source=copy_link",
   },
   concept: {
-    notionUrl: "https://www.notion.so/콘셉트섹션노션링크",
+    notionUrl: "https://www.notion.so/Y2K-35051f8c41668040bd68d3fc76cfc76d?source=copy_link",
   },
   campaign: {
-    notionUrl: "https://www.notion.so/캠페인섹션노션링크",
+    notionUrl: "https://www.notion.so/35051f8c416680febfa0f8611eab313b?source=copy_link",
     siteUrl: "https://miso6619-sketch.github.io/privacy-campaign/",
   },
 };
@@ -84,7 +84,7 @@ export const videoSections = {
     {
       id: 1,
       title: "Y2K 게임 영상",
-      desc: "키키 무드 기반의 옷갈아입히기 게임 영상",
+      desc: "아이돌 '키키' 무드 기반의 옷갈아입히기 게임 영상",
       src: y2kGame,
       type: "video",
     },
@@ -103,27 +103,27 @@ export const videoSections = {
   classwork: [
     {
       id: 1,
-      title: "클래스워크 01",
-      desc: "수업 중 제작한 영상 작업",
+      title: "카페 무드 영상 편집",
+      desc: "Premiere Pro를 활용해 제작한 카페 무드 영상으로, 커피머신 소리와 커피가 떨어지는 효과음을 더해 카페 분위기에 몰입할 수 있도록 구성한 클래스워크 작업입니다.",
       src: class01,
       type: "video",
-      notionUrl: "https://www.notion.so/클래스워크01",
+      notionUrl: "https://www.notion.so/35051f8c4166805991e6e650370b3a33?source=copy_link",
     },
     {
       id: 2,
-      title: "리스테린 광고 느낌 영상",
-      desc: "광고 무드와 컷 편집 중심으로 제작한 수업 작업",
+      title: "리스테린 광고 콘셉트 영상 편집",
+      desc: "Premiere Pro를 활용해 제작한 리스테린 광고 콘셉트 텍스트 모션 영상으로, Position, Opacity, Scale 값을 조절해 텍스트만으로 광고 분위기를 표현한 클래스워크 작업입니다.",
       src: class02,
       type: "video",
-      notionUrl: "https://www.notion.so/클래스워크02",
+      notionUrl: "https://www.notion.so/35051f8c41668015b7c2c73edc735813?source=copy_link",
     },
     {
       id: 3,
       title: "트림 패스 효과 활용 영상",
-      desc: "Trim Paths 효과를 활용해 제작한 수업 작업",
+      desc: "After Effects를 활용해 제작한 초반 모션 그래픽 연습 영상으로, Trim Paths 효과와 Position, Scale, Opacity 값을 조절하며 선이 그려지는 듯한 움직임을 표현한 클래스워크 작업입니다.",
       src: class03,
       type: "video",
-      notionUrl: "https://www.notion.so/클래스워크03",
+      notionUrl: "https://www.notion.so/35051f8c416680f4b5e7ef7bf3552918?source=copy_link",
     },
   ],
 };

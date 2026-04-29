@@ -1,16 +1,44 @@
-# React + Vite
+# Portfolio Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+UI/UX 웹디자인 및 프론트엔드 작업물을 정리한 개인 포트폴리오 사이트입니다.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 프로젝트 개요
 
-## React Compiler
+- 목적: 디자인 분야 지원용 포트폴리오 제작
+- 구성: 프로필 / 영상편집 / 웹페이지 / 디자인
+- 특징: 작업물을 빠르게 확인할 수 있는 간결한 구조
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 💻 주요 페이지
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 👤 프로필
+- 자기소개 및 기본 정보 정리
+
+### 🎬 영상편집
+- 웹사이트 헤더 영상, 콘셉트 영상, 캠페인 영상 정리
+
+### 🖥 웹페이지
+- HTML, CSS, JavaScript, React 기반 웹 작업물 정리
+
+### 🎨 디자인
+- Photoshop, Figma를 활용한 디자인 작업물 정리
+
+---
+
+## 🛠 사용 기술
+
+- React
+- Vite
+- JavaScript
+- CSS
+- React Router
+- Photoshop
+
+---
+
+## 🔗 사이트
+
+👉 [Portfolio](https://portfolio-site-bay-xi.vercel.app/)
