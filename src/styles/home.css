@@ -219,6 +219,7 @@
 .home-icon-item-3:hover {
   transform: translateY(-6px) scale(1.04);
 }
+
 /* 아이콘 이름 */
 .home-icon-label {
   display: none;
@@ -251,6 +252,7 @@
 }
 
 @media (max-width: 768px) {
+
   .home-frame,
   .home-inner {
     min-height: 100vh;
@@ -288,7 +290,8 @@
   }
 
   .home-guide-text {
-    top: 485px;
+    top: auto;
+    bottom: 230px;
     font-size: 20px;
     font-weight: 800;
     line-height: 1.3;
@@ -314,15 +317,17 @@
     border: 0;
     background: none;
     transform: none;
+    transition:
+      transform 0.18s ease,
+      opacity 0.18s ease;
   }
 
-  .home-icon-item-1,
-  .home-icon-item-2,
-  .home-icon-item-3,
-  .home-icon-item:hover,
-  .home-icon-item-1:hover,
-  .home-icon-item-2:hover,
-  .home-icon-item-3:hover {
+  .home-icon-item:active {
+    transform: scale(0.97);
+    opacity: 0.9;
+  }
+
+  .home-icon-item:hover {
     transform: none;
   }
 
@@ -366,8 +371,9 @@
   }
 
   .home-guide-text {
-    top: 460px;
-    font-size: 17px;
+    top: auto;
+    bottom: 188px;
+    font-size: 15px;
     font-weight: 800;
     line-height: 1.35;
   }
@@ -408,8 +414,9 @@
   }
 
   .home-guide-text {
-    top: 390px;
-    font-size: 15px;
+    top: auto;
+    bottom: 176px;
+    font-size: 14px;
     line-height: 1.4;
   }
 
