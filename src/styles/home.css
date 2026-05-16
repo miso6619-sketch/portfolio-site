@@ -331,6 +331,11 @@
     transform: none;
   }
 
+  .home-head:hover .home-head-img {
+    transform: none;
+    filter: none;
+  }
+
   .home-icon-visual {
     width: 170px;
     height: 145px;
