@@ -47,6 +47,10 @@ function HomePage() {
               alt="소개 페이지로 이동"
               className="home-head-img"
             />
+
+            <span className="home-head-label">
+              프로필
+            </span>
           </button>
 
           <p className="home-guide-text">
@@ -76,6 +80,10 @@ function HomePage() {
                     alt={item.title}
                     className="home-icon-img"
                   />
+                </span>
+
+                <span className="home-icon-label">
+                  {item.title}
                 </span>
               </button>
             ))}

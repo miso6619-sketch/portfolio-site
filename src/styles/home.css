@@ -191,6 +191,10 @@
   filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.08));
 }
 
+.home-head-label {
+  display: none;
+}
+
 /* 아이콘별 위치 미세 조정 */
 .home-icon-item-1 {
   transform: translateY(0);
@@ -214,6 +218,10 @@
 
 .home-icon-item-3:hover {
   transform: translateY(-6px) scale(1.04);
+}
+/* 아이콘 이름 */
+.home-icon-label {
+  display: none;
 }
 
 /* 반응형 */
@@ -242,48 +250,8 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .home-inner .menu-button-wrap {
-    top: 20px;
-    right: 0;
-  }
-
-  .home-head {
-    top: 56px;
-  }
-
-  .home-head-img {
-    width: 340px;
-  }
-
-  .home-guide-text {
-    top: 505px;
-    font-size: 24px;
-    font-weight: 800;
-  }
-
-  .home-icon-list {
-    width: 100%;
-    max-width: 820px;
-    bottom: 34px;
-    padding: 0 14px;
-  }
-
-  .home-icon-visual {
-    width: 230px;
-    height: 200px;
-  }
-
-  .home-bubble-img {
-    width: 125px;
-  }
-}
-
 @media (max-width: 768px) {
-  .home-frame {
-    min-height: 100vh;
-  }
-
+  .home-frame,
   .home-inner {
     min-height: 100vh;
   }
@@ -310,6 +278,16 @@
     width: 125px;
   }
 
+  .home-head-label {
+    display: block;
+    margin-top: -65px;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 14px;
+    font-weight: 700;
+    text-shadow:
+      0 2px 6px rgba(0, 0, 0, 0.18);
+  }
+
   .home-guide-text {
     top: 485px;
     font-size: 20px;
@@ -325,6 +303,17 @@
     padding: 0 12px;
     justify-content: space-between;
     overflow: visible;
+  }
+  
+  .home-icon-label {
+    display: block;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-shadow:
+      0 2px 6px rgba(0, 0, 0, 0.18);
   }
 
   .home-icon-item {
@@ -351,13 +340,10 @@
   }
 
   .home-guide-text {
-    top: 340px;
+    top: 460px;
     font-size: 17px;
     font-weight: 800;
     line-height: 1.35;
-    text-shadow:
-      0 3px 8px rgba(0, 0, 0, 0.22),
-      0 1px 2px rgba(0, 0, 0, 0.16);
   }
 
   .home-icon-list {
@@ -365,8 +351,6 @@
     width: 100%;
     max-width: 348px;
     padding: 0 12px;
-    justify-content: space-between;
-    overflow: visible;
   }
 
   .home-icon-visual {
@@ -377,25 +361,41 @@
   .home-head-bubble {
     display: none;
   }
+  
+  .home-head-label {
+    margin-top: -42px;
+    font-size: 12px;
+  }
+
+  .home-icon-label {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 390px) {
   .home-guide-text {
-    top: 338px;
+    top: 420px;
     font-size: 15px;
     line-height: 1.4;
   }
 
   .home-icon-list {
     bottom: 52px;
-    width: 100%;
     max-width: 320px;
     padding: 0 8px;
-    justify-content: space-between;
   }
 
   .home-icon-visual {
     width: 88px;
     height: 80px;
+  }
+
+  .home-head-label {
+    margin-top: -35px;
+    font-size: 12px;
+  }
+
+  .home-icon-label {
+    font-size: 12px;
   }
 }

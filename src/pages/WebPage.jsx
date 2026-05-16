@@ -81,6 +81,7 @@ function WebPage() {
                     <p>{project.desc}</p>
 
                     <div className="web-thumb">
+                      <div className="web-preview-label">페이지 미리보기</div>
                       <div className="web-thumb-scroll">
                         <img
                           src={project.image}

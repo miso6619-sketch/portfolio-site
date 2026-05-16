@@ -22,6 +22,9 @@ export const navItems = [
       { title: "프로젝트 02", sectionId: "web-project-02" },
       { title: "프로젝트 03", sectionId: "web-project-03" },
       { title: "프로젝트 04", sectionId: "web-project-04" },
+      { title: "프로젝트 05", sectionId: "web-project-05" },
+      { title: "프로젝트 06", sectionId: "web-project-06" },
+      { title: "프로젝트 07", sectionId: "web-project-07" },
     ],
   },
   {

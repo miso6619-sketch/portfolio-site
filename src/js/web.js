@@ -30,7 +30,7 @@ export const webProjects = [
   {
     id: "web-project-03",
     title: "REAL OR FAKE",
-    desc: "개인정보 유출과 딥페이크 위험성을 주제로 제작한 개인정보보호 캠페인 웹사이트입니다.",
+    desc: "개인정보 유출과 딥페이크 위험성을 주제로 제작한 개인정보보호 캠페인 사이트로, After Effects를 활용해 캠페인 영상을 제작하고 HTML, CSS, JavaScript로 영상 모달과 주요 정보를 구현한 웹사이트입니다.",
     notionUrl: "https://www.notion.so/REAL-or-FAKE-35051f8c4166809fabf2fc5d9f726efa?source=copy_link",
     siteUrl: "https://miso6619-sketch.github.io/privacy-campaign/",
     image: getWebImage("web-project-02.png"),
@@ -53,5 +53,23 @@ export const webProjects = [
     siteUrl: "https://miso6619-sketch.github.io/nail-archive/",
     image: getWebImage("web-project-04.png"),
     imageAlt: "Nail Tip 풀 페이지 캡쳐 이미지",
+  },
+  {
+    id: "web-project-06",
+    title: "Mellow Bedding",
+    desc: "감성적인 침실 무드를 담은 침구 브랜드 콘셉트 사이트로, React를 활용해 상품 리스트, 상세 페이지, 게시판, Q&A 기능을 구현한 웹사이트입니다.",
+    notionUrl: "https://www.notion.so/mellow-bedding-site-35251f8c4166802bbd56fc5b6e8bb3fd?source=copy_link",
+    siteUrl: "https://mellow-bedding-site.vercel.app/",
+    image: getWebImage("web-project-06.png"),
+    imageAlt: "Mellow Bedding 풀 페이지 캡쳐 이미지",
+  },
+  {
+    id: "web-project-07",
+    title: "KiiiKiii Visual Archive",
+    desc: "HTML, CSS, JavaScript를 활용해 제작한 걸그룹 KiiiKiii(키키)의 Visual Archive 사이트로, 반응형 레이아웃과 카테고리 필터 기능, 배경 음악 플레이어, 인터랙티브 카드 UI 등을 구현한 웹사이트입니다.",
+    notionUrl: "https://www.notion.so/KiiiKiii-Visual-Archive-35f51f8c416680a9b4f4f2c6f55faae8?source=copy_link",
+    siteUrl: "https://miso6619-sketch.github.io/KiiiKiii-Visual-Archive/",
+    image: getWebImage("web-project-07.png"),
+    imageAlt: "KiiiKiii Visual Archive 풀 페이지 캡쳐 이미지",
   },
 ];
