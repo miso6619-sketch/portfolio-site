@@ -92,7 +92,7 @@ function AboutPage() {
 
                       <div className="abt-info-row">
                         <dt>생년월일</dt>
-                        <dd>2001.01.25</dd>
+                        <dd>2001.10.25</dd>
                       </div>
 
                       <div className="abt-info-row">
