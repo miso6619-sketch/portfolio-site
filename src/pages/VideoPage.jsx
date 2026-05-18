@@ -73,7 +73,7 @@ function VideoPage() {
                     </div>
                   </div>
 
-                  <p>산타 사이트의 동화적인 무드와 페이지별 콘셉트를 시각적으로 전달하기 위해 제작한 헤더 영상 작업입니다.</p>
+                  <p>'산타'라는 이름의 등산 사이트에 동화적인 무드와 페이지별 콘셉트를 시각적으로 전달하기 위해 제작한 헤더 영상 작업입니다.</p>
 
                   <div className="vid-list">
                     {videoSections.web.map((item) => (
