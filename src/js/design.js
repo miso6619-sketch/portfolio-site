@@ -13,7 +13,7 @@ export const designProjects = [
         id: "design-01",
         type: "photoshop",
         title: "작업 01",
-        desc: "GPT 이미지 생성과 Photoshop 편집을 활용해 따뜻한 베이지 톤의 브랜드 무드를 담은 라이프스타일 제품 상세 페이지 형식으로 완성한 디자인 작업입니다.",
+        desc: "ChatGPT 이미지 생성과 Photoshop 편집을 활용해 따뜻한 베이지 톤의 브랜드 무드를 담은 라이프스타일 제품 상세 페이지 형식으로 완성한 디자인 작업입니다.",
         notionUrl: "https://www.notion.so/34f51f8c416680aabcd0ec5a081bddf3?source=copy_link",
         image: getDesignImage("design-new-01.png"),
         imageAlt: "작업 01 대표 이미지",

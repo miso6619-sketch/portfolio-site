@@ -67,7 +67,7 @@ function AboutPage() {
                         className="abt-profile-img"
                       />
                     </div>
-
+                    
                     <div className="abt-intro-img-box">
                       <img
                         src={introTextImg}
