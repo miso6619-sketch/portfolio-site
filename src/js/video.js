@@ -84,7 +84,7 @@ export const videoSections = {
     {
       id: 1,
       title: "Y2K 게임 영상",
-      desc: "아이돌 '키키' 무드 기반의 옷갈아입히기 게임 영상",
+      desc: "Y2K 무드 기반의 옷갈아입히기 게임 영상",
       src: y2kGame,
       type: "video",
     },

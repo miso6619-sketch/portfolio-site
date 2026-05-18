@@ -97,17 +97,174 @@ body {
 
 .abt-body {
   width: 100%;
-  max-width: 1080px;
-  height: auto;
-  min-height: auto;
-  padding: 0;
-  overflow: visible;
+  max-width: 1180px;
+  height: 100%;
+  min-height: 620px;
+  margin: 0 auto;
+  padding: 24px 18px 40px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.35fr;
+  gap: 85px;
+  color: #071a37;
 }
 
-.abt-text {
-  font-size: 18px;
-  line-height: 1.7;
-  color: var(--text-body);
+.abt-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 5px;
+  min-height: auto;
+}
+
+.abt-profile-img-box {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.abt-profile-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.abt-intro-img-box {
+  width: 100%;
+  max-width: 340px;
+  margin: 0;
+}
+
+.abt-intro-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.abt-right {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.abt-section-title {
+  margin: 0 0 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(36, 68, 108, 0.32);
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #071a37;
+}
+
+.abt-info-list {
+  margin: 0;
+  padding: 22px 24px;
+  border-radius: 8px;
+  background: rgba(235, 239, 245, 0.4);
+}
+
+.abt-info-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.abt-info-row:last-child {
+  margin-bottom: 0;
+}
+
+.abt-info-row dt {
+  font-size: 15px;
+  font-weight: 800;
+  color: #071a37;
+}
+
+.abt-info-row dd {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #071a37;
+}
+
+.abt-edu-box {
+  padding: 22px 24px;
+  border-radius: 8px;
+  background: rgba(235, 239, 245, 0.4);
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.abt-edu-item {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.abt-edu-item strong {
+  min-width: 180px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #071a37;
+}
+
+.abt-edu-item span {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #071a37;
+}
+
+.abt-skill-list,
+.abt-strength-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.abt-skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.abt-skill-item {
+  height: 34px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: rgba(227, 232, 239, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #071a37;
+}
+
+.abt-strength-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 18px;
+}
+
+.abt-strength-item {
+  min-width: 108px;
+  height: 36px;
+  padding: 0 20px;
+  border-radius: 999px;
+  background: rgba(227, 232, 239, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #071a37;
 }
 
 /* 반응형 */
@@ -126,6 +283,26 @@ body {
 
   .abt-scroll-area {
     padding: 0 36px 50px;
+  }
+
+  .abt-body {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    height: auto;
+    min-height: auto;
+    padding: 44px 0 40px;
+  }
+
+  .abt-left {
+    justify-content: flex-start;
+  }
+
+  .abt-intro-img-box {
+    align-self: center;
+  }
+
+  .abt-right {
+    padding-top: 0;
   }
 }
 
@@ -150,9 +327,29 @@ body {
     padding: 0 24px 42px;
   }
 
-  .abt-text {
-    font-size: 16px;
-    line-height: 1.65;
+  .abt-profile-img-box {
+    width: 220px;
+  }
+
+  .abt-intro-img-box {
+    max-width: 300px;
+  }
+
+  .abt-section-title {
+    font-size: 22px;
+  }
+
+  .abt-edu-box {
+    padding: 18px 20px;
+  }
+
+  .abt-edu-item {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .abt-edu-item strong {
+    min-width: auto;
   }
 }
 
@@ -173,7 +370,36 @@ body {
     padding: 0 18px 36px;
   }
 
-  .abt-text {
-    font-size: 15px;
+  .abt-body {
+    padding: 32px 0 36px;
+    gap: 48px;
+  }
+
+  .abt-profile-img-box {
+    width: 190px;
+  }
+
+  .abt-intro-img-box {
+    max-width: 260px;
+  }
+
+  .abt-info-row {
+    grid-template-columns: 78px 1fr;
+  }
+
+  .abt-info-row dt,
+  .abt-info-row dd {
+    font-size: 13px;
+  }
+
+  .abt-skill-item,
+  .abt-strength-item {
+    height: 32px;
+    padding: 0 14px;
+    font-size: 12px;
+  }
+
+  .abt-strength-item {
+    min-width: auto;
   }
 }
