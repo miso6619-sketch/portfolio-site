@@ -89,7 +89,7 @@ function AboutPage() {
 
                       <div className="abt-info-row">
                         <dt>이메일</dt>
-                        <dd>miso6619@gmail.com</dd>
+                        <dd>0000</dd>
                       </div>
                     </dl>
                   </section>
