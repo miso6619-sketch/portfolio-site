@@ -1,9 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import SideMenu from "../components/SideMenu";
 
-import introTextImg from "../assets/images/about/introText.png";
-import aboutImg from "../assets/images/about/aboutImg.png";
-
 import "../styles/about.css";
 
 function AboutPage() {
@@ -61,19 +58,9 @@ function AboutPage() {
                   <div className="abt-left">
 
                     <div className="abt-profile-img-box">
-                      <img
-                        src={aboutImg}
-                        alt="프로필 이미지"
-                        className="abt-profile-img"
-                      />
                     </div>
                     
                     <div className="abt-intro-img-box">
-                      <img
-                        src={introTextImg}
-                        alt="소개 텍스트"
-                        className="abt-intro-img"
-                      />
                     </div>
 
                     
@@ -87,17 +74,17 @@ function AboutPage() {
                     <dl className="abt-info-list">
                       <div className="abt-info-row">
                         <dt>이름</dt>
-                        <dd>김미소 / KIM MI SO</dd>
+                        <dd>000</dd>
                       </div>
 
                       <div className="abt-info-row">
                         <dt>생년월일</dt>
-                        <dd>2001.10.25</dd>
+                        <dd>0000</dd>
                       </div>
 
                       <div className="abt-info-row">
                         <dt>연락처</dt>
-                        <dd>010.5653.6619</dd>
+                        <dd>0000</dd>
                       </div>
 
                       <div className="abt-info-row">
@@ -114,12 +101,12 @@ function AboutPage() {
 
                       <div className="abt-edu-item">
                         <strong>2022.12.26 - 2025.03.01</strong>
-                        <span>미르치과병원 교정과</span>
+                        <span>0000</span>
                       </div>
 
                       <div className="abt-edu-item">
                         <strong>2025.05.26-</strong>
-                        <span>국민취업지원제도 1유형 참여 중</span>
+                        <span>0000</span>
                       </div>
 
                       <div className="abt-edu-item">
